@@ -28,6 +28,7 @@ const saveFive = document.getElementById('saveFive');
 function displayDate() {
     var rightNow = moment().format('dddd MMMM Do, YYYY h:mm a');
     dateEl.text(rightNow);
+    setInterval(displayDate, 1000);
 };
 
 displayDate();
